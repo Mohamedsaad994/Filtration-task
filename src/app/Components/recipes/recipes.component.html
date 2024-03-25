@@ -1,0 +1,19 @@
+<section>
+  <h1 class="second-color my-3">Recipes</h1>
+  <div class="container">
+    <div class="row w-75 mx-auto">
+      <div *ngFor="let item of recipesList" class="col-lg-4 col-md-6 g-4 mx-auto">
+        <div class="recipe">
+          <img class="w-100" [src]="item.strMealThumb" alt="">
+          <div class="p-3 d-flex flex-column height justify-content-center">
+            <h3 class="second-color">{{item.strMeal}}</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime modi repudiandae error quibusdam, minus repellat totam cumque vero unde nisi ad omnis sint impedit, eum cum libero aut asperiores?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center my-5">
+      <button class="main-btn">Contact Us</button>
+    </div>
+  </div>
+</section>

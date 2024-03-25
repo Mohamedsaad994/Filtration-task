@@ -1,0 +1,80 @@
+.background-1{
+  background-image: url('./../../../assets/images/Rectangle 264.png');
+}
+.background-1 p{
+  font-size: 14px;
+}
+.background-2{
+  background-image: url('./../../../assets/images/Mask\ Group-1.png');
+}
+.background-2 img{
+  position: relative;
+  transform: translate(-50%, 50%);
+}
+h1{
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.icons{
+  background:#fff center/cover url('./../../../assets/images/Mask Group.png') no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding:15px;
+  width:35%
+}
+.icons i{
+  color:rgb(210, 146, 70);
+  margin:5px 0
+}
+.icons + p{
+  margin-top: auto;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .info{
+    width:80% !important
+  }
+  .background-2 img{
+    position: relative;
+    transform: translate(-20%, 100%);
+  }
+  .icons{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 767.98px){
+  .background-1{
+    text-align: center;
+  }
+  .background-2{
+    padding:40px 0
+  }
+  h1{
+    font-size: 45px;
+  }
+  .icons{
+    flex-direction: row;
+    width:50%;
+    justify-content: space-around;
+  }
+  .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .background-2 img{
+    position: static;
+    width:60% !important;
+    transform: none;
+    display: block;
+  }
+  .tel{
+    font-size: 12px !important;
+  }
+}
+

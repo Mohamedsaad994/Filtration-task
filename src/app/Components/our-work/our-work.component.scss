@@ -1,0 +1,66 @@
+.work{
+  height: 600px;
+  position: relative;
+}
+
+.background-1{
+  background-image: url('./../../../assets/images/Mask\ Group-1.png');
+}
+.background-1 p{
+  font-size: 14px;
+}
+.background-2{
+  background-image: url('./../../../assets/images/Rectangle 264.png');
+}
+.background-2 h1{
+  font-size: 100px;
+  color:#fff;
+  font-weight: bold;
+  text-align: center;
+  width:70%;
+  margin: auto;
+}
+.images{
+  position: absolute;
+  bottom: 5%;
+  left: 17%;
+}
+.images img{
+  width:170px;
+  height: 170px;
+}
+
+@media (max-width: 991.98px){
+  .work{
+    height: auto;
+  }
+  .background-1{
+    padding:80px 0
+  }
+  .background-1 p{
+    width:90% !important;
+  }
+  .background-2 h1{
+    font-size: 80px;
+  }
+  .images{
+    position: static;
+    padding:50px 0
+  }
+}
+
+@media (max-width: 767.98px) {
+  .work{
+    text-align: center;
+  }
+  .background-1 p{
+    width:80% !important;
+    margin:auto !important;
+  }
+  .background-2{
+    padding-bottom: 30px;
+  }
+  .background-2 h1{
+    font-size: 70px;
+  }
+}

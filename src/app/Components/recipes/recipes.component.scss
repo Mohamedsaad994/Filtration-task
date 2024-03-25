@@ -1,0 +1,29 @@
+h1{
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.height{
+  height: 60%;
+}
+.recipe{
+  border: 1px solid rgb(210, 146, 70);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 460px;
+}
+.recipe img{
+  height: 200px;
+}
+.recipe h3{
+  font-size: 16px;
+}
+.recipe p{
+  font-size: 14px;
+}
+@media (max-width: 767.98px){
+  h1{
+    font-size: 70px;
+  }
+}

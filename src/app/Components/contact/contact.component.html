@@ -1,0 +1,52 @@
+<section class="pt-5">
+  <h1 class="second-color">Contact us</h1>
+  <div class="container">
+    <div class="row w-75 mx-auto align-items-center">
+      <div class="col-md-6">
+        <div>
+          <form [formGroup]="contactForm" (ngSubmit)="handleForm()">
+            <div class="form-item my-2">
+              <input formControlName="name" type="text" placeholder="FullName">
+              <div *ngIf="contactForm.get('name')?.errors&&contactForm.get('name')?.touched" class="text-danger fw-bold text-center">
+                <p *ngIf="contactForm.get('name')?.getError('required')">*Name is Requierd</p>
+                <p *ngIf="contactForm.get('name')?.getError('minlength')">*Name min length 3</p>
+                <p *ngIf="contactForm.get('name')?.getError('maxlength')">*Name max length 20</p>
+              </div>
+            </div>
+            <div class="form-item my-2">
+              <input formControlName="email" type="email" placeholder="Email">
+              <div *ngIf="contactForm.get('email')?.errors&&contactForm.get('email')?.touched" class="text-danger fw-bold text-center">
+                <p *ngIf="contactForm.get('email')?.getError('required')">*Email is Requierd</p>
+                <p *ngIf="contactForm.get('email')?.getError('email')">*Email Invalid Format</p>
+              </div>
+            </div>
+            <div class="form-item my-2">
+              <input formControlName="phone" type="tel" placeholder="Phone Number">
+              <div *ngIf="contactForm.get('phone')?.errors&&contactForm.get('phone')?.touched" class="text-danger fw-bold text-center">
+                <p *ngIf="contactForm.get('phone')?.getError('required')">*Phone is Requierd</p>
+                <p *ngIf="contactForm.get('phone')?.getError('pattern')">*Accept only Egyption Phone Numbers</p>
+              </div>
+            </div>
+            <div class="text-center">
+              <button [disabled]="contactForm.invalid" class="custom-btn">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="info d-flex flex-column justify-content-center">
+          <div class="mail d-flex align-items-center ms-5 mb-3">
+            <i class="fa-solid fa-envelope me-3 second-color"></i>
+            <p class="m-0 small">upskilling.eg1@gmail.com</p>
+          </div>
+          <div class="tel d-flex align-items-center ms-5">
+            <i class="fa-solid fa-phone me-3 second-color"></i>
+            <p class="m-0 small">+20 115 493 2137</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer mt-5">
+  </div>
+</section>

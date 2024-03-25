@@ -1,0 +1,55 @@
+h1{
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+}
+input{
+  border: none;
+  outline: none;
+  background-color: #ffd39f;
+  border-radius: 30px;
+  padding:15px 25px;
+  width:100%
+}
+button{
+  border:none;
+  border-radius: 30px;
+  border:1px solid rgb(210, 146, 70);
+  padding:10px 25px;
+  background-color: #fff;
+  width:50%;
+  transition: 0.4s;
+}
+button:hover{
+  background-color: rgb(210, 146, 70);
+  color:#fff
+}
+button:disabled{
+  border-color:rgba(210, 147, 70, 0.47);
+  cursor: not-allowed;
+  color:#ccc
+}
+button:disabled:hover{
+  background-color: #fff;
+  color:#ccc
+}
+.info div{
+  width:fit-content;
+}
+.footer{
+  height: 60px;
+  background-color: rgb(210, 146, 70);
+}
+
+@media (max-width: 767.98px){
+  h1{
+    font-size:70px
+  }
+  .info{
+    margin-top:30px
+  }
+  .mail, .tel{
+    margin:10px auto !important;
+  }
+
+}

@@ -1,0 +1,40 @@
+.testymonials{
+  background:rgba(210, 147, 70, 0.648) center url('./../../../assets/images/Mask Group.png');
+}
+.testymonials h1{
+  font-size: 100px;
+  color:#fff;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.testy{
+  background-color: #fff;
+  border-radius: 20px;
+}
+.testy h3{
+  font-size: 16px;
+}
+.testy p, .testy i{
+  font-size: 14px;
+}
+
+@media (max-width: 991.98px){
+  .testy-holder{
+    width:100% !important;
+  }
+  .testymonials h1{
+    font-size:80px
+  }
+}
+@media (max-width: 767.98px){
+  .testymonials h1{
+    font-size:70px
+  }
+}
+
+@media (max-width: 575.98px) {
+  .testymonials h1{
+    font-size:50px
+  }
+}
