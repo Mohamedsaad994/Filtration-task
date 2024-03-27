@@ -4,12 +4,12 @@ $font-family: "Inter", sans-serif;
 $main-color: rgb(253, 186, 16);
 $second-color: rgb(210, 146, 70);
 
-body{
+body, html{
   font-family: $font-family;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 @media (max-width: 991.98px){
-  body{
+  body, html{
     overflow-x: hidden !important;
   }
 }
